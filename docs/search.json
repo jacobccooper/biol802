@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "biol827-graduate_statistics",
+    "section": "",
+    "text": "Preface\nThese are some demonstrations and some extra information that may be useful for BIOL802: Organic Evolution at the University of Nebraska at Kearney. Most of these demonstrations involve use of the program R and RStudio; these programs are required for BIOL827, but are not necessary for BIOL802 beyond these additional workthroughs.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "hwe.html",
+    "href": "hwe.html",
+    "title": "1  Hardy-Weinberg Equilibrium",
+    "section": "",
+    "text": "2 Introduction\nHardy-Weinberg Equilibrium (or HWE) is a theoretical model designed to look at the “null expectation” for genotype frequencies within a population if no evolution is occurring. Thus, they are a null model against which we can explicitly test observed genotype frequencies to determine if a certain trait is undergoing selection.\nThis work-through is meant to be a hands-on supplemental for Lecture 6 covering Hardy-Weinberg Equilibrium.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
+    ]
+  },
+  {
+    "objectID": "hwe.html#coding-in-r",
+    "href": "hwe.html#coding-in-r",
+    "title": "1  Hardy-Weinberg Equilibrium",
+    "section": "2.1 Coding in R",
+    "text": "2.1 Coding in R\nThis document is written in rmarkdown, which is a coding language used for creating professional documents in R using RStudio. All of these programs are available for free, and their requisite packages are likewise free. This document uses R 4.4.1.\nR is a fairly straightforward coding language, and notable prefers the use of “&lt;-” over “=” to define variables to avoid any logical errors (although in many instances these character strings can be interchangeable). R commands are fairly easy to use, and arguments are separated by commas. Here, we will be creating a basic program for studtying HWE.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
+    ]
+  },
+  {
+    "objectID": "hwe.html#moths",
+    "href": "hwe.html#moths",
+    "title": "1  Hardy-Weinberg Equilibrium",
+    "section": "3.1 Moths",
+    "text": "3.1 Moths\nLet’s assume we have two color morphs of moth, Black (B, dominant) and white (b, recessive). We have the following genotype frequences:\n\n\n\nGenotype\nFrequency\n\n\n\n\nBB\n0.5\n\n\nBb\n0.3\n\n\nbb\n0.2\n\n\n\nThus, we know that \\(bb = q^{2} = 0.2\\).\n\nq &lt;- sqrt(0.2)\nhw(q)\n\n[1] \"P^2 = 0.31\"\n[1] \"2PQ = 0.49\"\n[1] \"Q^2 = 0.2\"\n\n\nWe can see the returned values are extremely similar to what we observe; thus, the population is in equilibrium.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
+    ]
+  },
+  {
+    "objectID": "hwe.html#heterozygote-advantage",
+    "href": "hwe.html#heterozygote-advantage",
+    "title": "1  Hardy-Weinberg Equilibrium",
+    "section": "3.2 Heterozygote advantage",
+    "text": "3.2 Heterozygote advantage\nLet’s pretend we have a trait where heterozygotes have higher fitness. This has been documented in several natural systems. In this case, let’s say heterozygotes for a trait have increased disease resistance when it comes to locus T. Thus:\n\n\n\nGenotype\nFrequency\n\n\n\n\nTT\n0.15\n\n\nTt\n0.70\n\n\ntt\n0.15\n\n\n\nThus, \\(q^{2} = tt = 0.15\\).\n\nhw(q=sqrt(0.15))\n\n[1] \"P^2 = 0.38\"\n[1] \"2PQ = 0.47\"\n[1] \"Q^2 = 0.15\"\n\n\nWe can see here that the populations are not in equilibrium, and there appears to be evolution occurring in the population. The values we expect do not align with what we observe.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
+    ]
+  }
+]
