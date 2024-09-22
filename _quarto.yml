@@ -4,12 +4,11 @@ project:
 
 book:
   title: "biol827-graduate_statistics"
-  author: "Norah Jones"
-  date: "8/6/2024"
+  author: "Dr. Jacob C. Cooper"
+  date: "9/22/2024"
   chapters:
     - index.qmd
     - hwe.qmd
-    - references.qmd
 
 bibliography: references.bib
 
