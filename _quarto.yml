@@ -1,0 +1,23 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "biol827-graduate_statistics"
+  author: "Norah Jones"
+  date: "8/6/2024"
+  chapters:
+    - index.qmd
+    - hwe.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
